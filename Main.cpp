@@ -4,6 +4,7 @@
 
 
 
+
 void sortNumbers(int arr[], int lenght)
 {
 	for (int i = 0; i < lenght; i++)
@@ -33,31 +34,18 @@ T add(T lhs, T rhs)
 
 int main()
 {
-	//Makes the numbers on the screen 
-   int numbers[5] = {3, 5, 1, 4, 2};
-
-	for (int i = 0; i < 5; i++)
-	{
-		std::cout << numbers[i];
-	}
 	
-	//Sorts the numbers
-	sortNumbers(numbers, 5);
-	std::cout << "" << std::endl;
+	DynamicArray<int> test = DynamicArray<int>();
+	test.addItem(5);
+	test.addItem(3);
+	test.addItem(4);
+	test.addItem(2);
+	test.addItem(1);
+	test.sortItems();
+	test.print();
+	system("pause");
 
-	for (int i = 0; i < 5; i++)
-	{
-		std::cout << numbers[i];
-	}
-
-
-	DynamicArray<T>::sortItems(numbers, 5);
-
-
-	//auto sum = add<int>(4.234f, 3.643f);
-
-	//Makes the shop
-	Shopkeep<int, 5> potionSeller = Shopkeep<int,5>();
+	
 	
 }
 
