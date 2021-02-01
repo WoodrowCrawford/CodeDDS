@@ -50,9 +50,14 @@ int main()
 		std::cout << numbers[i];
 	}
 
-	auto sum = add<int>(4.234f, 3.643f);
 
+	DynamicArray<T>::sortItems(numbers, 5);
+
+
+	//auto sum = add<int>(4.234f, 3.643f);
+
+	//Makes the shop
 	Shopkeep<int, 5> potionSeller = Shopkeep<int,5>();
-
+	
 }
 
